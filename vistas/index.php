@@ -19,7 +19,7 @@
                 url: 'getData.php',
                 data: 'busqueda='+busqueda+'&valor='+valor,
                 success:function(html){
-                    $('#userData').html(html);
+                    $('#ListaPelis').html(html);
                 }
             });
         }
@@ -48,7 +48,7 @@
                         <th><a href="guardar_pelicula.php"> Añadir nueva Pelicula </a></th>
                     </tr>
                 </thead>
-                <tbody id="userData">
+                <tbody id="ListaPelis">
                     <?php
                         include 'DB.php';
                         $db = new DB();
